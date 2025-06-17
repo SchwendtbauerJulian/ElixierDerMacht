@@ -1,6 +1,7 @@
 # Elixier der Macht
 
 ## Spielanleitung
+- elixierdermacht.pl consulten
 - starten mit 'start.'
 - namen mit unterstrich oder nur vorname
 - Cheats: cheat_item(Item)., cheat_gold(Amount)., cheat_skill(Skill).
@@ -10,21 +11,19 @@
 ---
 
 ### Spieler 
-talentierter, aber unerfahrener Alchemist, Spezialisiert auf Tränke, Rätsel und Alchemie.
+talentierter, aber unerfahrener Alchemist, Spezialisiert auf Tränke und Alchemie.
 
 ---
 
 ### Waldkräuter Wilma 
-alte aber sehr weise Frau, kennt sehr wirkungsvolle Rezepte
-
-Skill: Gibt dir den richtigen Tipp für den Trank
+alte aber sehr weise Frau, kennt sehr wichtige Informationen
 
 ---
 
 ### Eisenfaust Ewald
 Schmied, verkauft wichtiges Zubehör
 
-Skill: schmiedet Waffen und Gegenstände
+Skill: schmiedet Waffen und Rüstung
 
 ---
 
@@ -38,7 +37,7 @@ Skill: Doppelschlag
 ### Magier Metron 
 lehrt die Kunst der Magie
 
-Skill: Wassermagie
+Skill: Wassermagie, Feuermagie
 
 ---
 
@@ -52,14 +51,15 @@ Skill: gibt dir für einen Gegenwert Rezepte
 ### Fleischhauer Fernando 
 verkauft nicht nur Fleisch, sondern auch besondere Zutaten
 
-Skill: Messerwurf - kann Messer Zielgenau werfen
+---
+
+### Händler Harald
+erfahrener Händler der dir wertvolle Gegenstände abkauft
 
 ---
 
 ### Goblin Gerald  
 diebischer Goblin, der oft Dinge mitgehen lässt
-
-Skill: flinke Finger(Diebstahl), schleicht sich lautlos an
 
 ---
 
@@ -67,6 +67,8 @@ Skill: flinke Finger(Diebstahl), schleicht sich lautlos an
 führt böse Dinge im Schilde
 
 ---
+
+
 
 ## Story
 In einer Welt, in dem die Alchemie und die Magie die Luft erfüllen, lebt ein junger, unerfahrener Alchemist, dessen Talent in ihm schlummert. Auf seiner Such nach Wissen und Macht, begegnet er vielen weisen Meistern, die ihm deren geheimen Fähigkeiten weitergeben.

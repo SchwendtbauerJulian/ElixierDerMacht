@@ -40,7 +40,7 @@ gehe_zu_seite(Seite) :-
     ;   write('Diese Seite existiert nicht.'), nl).
 
 % Pruefung ob Seite existiert
-seite_existiert(N) :- N >= 1, N =< 7.
+seite_existiert(N) :- N >= 1, N =< 8.
 
 % Seiteninhalt
 zeige_seite(N) :-
@@ -50,7 +50,7 @@ zeige_seite(N) :-
     write('==============================================='), nl,
     seiten_inhalt(N),
     nl,
-    write('Seite '), write(N), write(' von 7'), nl,
+    write('Seite '), write(N), write(' von 8'), nl,
     write('-----------------------------------------------'), nl,
     write('Befehle: naechste_seite. | vorherige_seite.'), nl,
     write('         gehe_zu_seite(N). | buch_hilfe.'), nl,
@@ -70,7 +70,8 @@ seiten_inhalt(1) :-
     write('4. Wichtige Charaktere'), nl,
     write('5. Das Elixier der Macht'), nl,
     write('6. Kampfsystem'), nl,
-    write('7. Tipps & Tricks'), nl.
+    write('7. Tipps & Tricks'), nl,
+    write('8. Mob drops'), nl.
 
 % Seite 2: Willkommen
 seiten_inhalt(2) :-
@@ -111,7 +112,6 @@ seiten_inhalt(4) :-
     write('- Item: Lebenstrank'), nl,
     write('SCHWERTMEISTER SIEGFRIED (Marktplatz):'), nl,
     write('- Faehigkeit: Doppelschlag'), nl.
-
 % Seite 5: Das Elixier der Macht
 seiten_inhalt(5) :-
     write('            DAS ELIXIER DER MACHT'), nl, nl,
@@ -135,9 +135,10 @@ seiten_inhalt(6) :-
     write('- anwenden(messerwurf).   (7 Schaden)'), nl,
     write('- trinke(heiltrank).      (10 LP zurueck)'), nl, nl,
     write('LEBENSPUNKTE:'), nl,
-    write('- Spieler: 30 LP'), nl,
-    write('- Tyrael: 400 LP (6 Schaden/Runde)'), nl,
-    write('- Zombies: 20-25 LP (4 Schaden/Runde)'), nl, nl,
+    write('- Spieler: 50 LP'), nl,
+    write('- Tyrael: 120 LP (6-10 Schaden/Runde)'), nl,
+    write('- Zombies: 25 LP (4 Schaden/Runde)'), nl, nl,
+    write('- Skelette: 40 LP (9-12 Schaden/Runde)'), nl, nl,
     write('TIPP: Lerne Doppelschlag fuer Tyrael!'), nl.
 
 % Seite 7: Tipps & Tricks
@@ -145,12 +146,20 @@ seiten_inhalt(7) :-
     write('               TIPPS & TRICKS'), nl, nl,
     write('NUETZLICHE BEFEHLE:'), nl,
     write('- write_map.     Zeige Weltkarte'), nl,
-    write('- inventar.      Pruefe Items'), nl,
+    write('- inventar.      Pruefe Items, Gold & Lebenspunkte'), nl,
     write('- faehigkeiten.  Pruefe Faehigkeiten'), nl, nl,
     write('ZOMBIE TRAINING:'), nl,
     write('uebe im Friedhof gegen Zombies, bevor du'), nl,
     write('gegen Tyrael kaempfst!'), nl, nl,
     write('VIEL ERFOLG BEIM RETTEN DER WELT!'), nl.
+
+% Seite 8: Mob drops
+seiten_inhalt(8) :-
+    write('                 Mob drops'), nl, nl,
+    write('Zombie:          Zombieherz'), nl,
+    write('Skelett:         Knochen, (10% Skelettkopf)'), nl,
+    write('Schleimmonster:  Schleim'), nl.
+
 
 % Hilfefunktion fuer das Buch
 buch_hilfe :-
